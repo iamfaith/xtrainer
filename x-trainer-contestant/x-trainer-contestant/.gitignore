@@ -1,0 +1,29 @@
+# Python and editor caches
+.DS_Store
+**/__pycache__/
+**/*.pyc
+**/*.egg-info/
+**/.pytest_cache/
+**/.idea/
+**/.vscode/
+
+# Runtime logs and crash files
+**/*.log
+**/*.log.*
+**/*.dmp
+**/.thumbs/
+
+# Training and rollout outputs
+outputs/
+videos/
+wandb/
+logs/
+checkpoints/
+datasets/*
+!datasets/README.md
+pretrained_model/*
+!pretrained_model/README.md
+
+# VR certificates are generated separately on each machine
+source/leisaac/leisaac/xtrainer_utils/XLeVR/cert.pem
+source/leisaac/leisaac/xtrainer_utils/XLeVR/key.pem

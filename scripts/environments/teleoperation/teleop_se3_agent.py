@@ -162,6 +162,8 @@ def main():  # noqa: C901
     from isaaclab_tasks.utils import parse_env_cfg
     from isaaclab.managers import TerminationTermCfg, DatasetExportMode
     
+    # import sys
+    # sys.path.insert(0, "/workspace/xtrainer_leisaac/source/leisaac") #
     import leisaac.tasks  # Can not be removed. See source/leisaac/leisaac/__init__.py for details.   
 
     from leisaac.devices import Se3Keyboard, SO101Leader, BiSO101Leader, XTrainerLeader, BiKeyboard, XTrainerVR
