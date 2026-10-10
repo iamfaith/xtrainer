@@ -100,6 +100,16 @@ python scripts/environments/teleoperation/teleop_se3_agent.py \
     --device=cuda \
     --enable_cameras \
     --multi_view
+
+
+
+python "scripts/environments/teleoperation/teleop_se3_agent.py" --task=task3 --teleop_device=bi_keyboard --num_envs=1 --device=cuda 
+
+
+--step_hz=30 --sensitivity=1.0 --dataset_layout=per_episode 
+
+
+--dataset_file="$project_root/datasets/task1/dataset.hdf5" --num_demos=0 --port=/dev/ttyACM0 --left_arm_port=/dev/ttyACM0 --right_arm_port=/dev/ttyACM1
 ```
 
 #### ⌨️ 键位说明（`BiKeyboard`）

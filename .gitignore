@@ -1,3 +1,7 @@
+assets/
+tasks/
+*.zip
+
 lerobot*
 # C++
 **/cmake-build*/

@@ -16,5 +16,5 @@ docker run --name isaac-lab --entrypoint bash -it --gpus all \
    -v /mnt/docker/isaac-sim/logs:/root/.nvidia-omniverse/logs:rw \
    -v /mnt/docker/isaac-sim/data:/root/.local/share/ov/data:rw \
    -v /mnt/docker/isaac-sim/documents:/root/Documents:rw \
-   -v /mnt/x-trainer:/workspace/xtrainer_leisaac:rw \
+   -v /mnt/x-trainer_old:/workspace/xtrainer_leisaac:rw \
    gdpi_isaac-lab
