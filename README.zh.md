@@ -103,7 +103,17 @@ python scripts/environments/teleoperation/teleop_se3_agent.py \
 
 
 
-python "scripts/environments/teleoperation/teleop_se3_agent.py" --task=task3 --teleop_device=bi_keyboard --num_envs=1 --device=cuda 
+export PYTHONPATH="$PWD/source/leisaac${PYTHONPATH:+:$PYTHONPATH}"
+export LEISAAC_ASSETS_ROOT="$PWD/assets"
+
+python scripts/environments/teleoperation/teleop_se3_agent.py \
+  --task=task3 \
+  --teleop_device=bi_keyboard \
+  --num_envs=1 \
+  --device=cuda \
+  --enable_cameras \
+  --multi_view
+
 
 
 --step_hz=30 --sensitivity=1.0 --dataset_layout=per_episode 
